@@ -1,0 +1,159 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: unset;
+}
+
+.image {
+  display: block;
+  position: relative;
+  width: 34rem;
+  height: 45rem;
+  margin: auto;
+}
+
+img:nth-child(1) {
+  width: 50%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  height: 45rem;
+  object-fit: contain;
+}
+img:nth-child(2) {
+  width: 100%;
+  object-fit: contain;
+  position: absolute;
+  left: 0rem;
+  margin: auto;
+  top: 7rem;
+  animation-duration: 4s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  height: 24.7rem;
+  object-fit: contain;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f7f5dd;
+}
+
+.main {
+  width: 95%;
+  height: 85%;
+  min-height: fit-content;
+  margin: auto;
+  background-color: #f68a76;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 1rem;
+  padding: 1rem;
+  overflow: hidden;
+  max-width: 100rem;
+}
+
+@keyframes male {
+  from {
+  }
+  to {
+    transform: rotate(22deg);
+    left: -4.2rem;
+    top: 6.2rem;
+  }
+}
+@keyframes female {
+  from {
+    right: 0;
+  }
+  to {
+    transform: rotate(-22deg);
+    right: -7rem;
+    top: 6.2rem;
+  }
+}
+@keyframes maleTofemale {
+  from {
+    transform: rotate(17deg);
+    left: -4rem;
+    top: 6.2rem;
+  }
+  to {
+    transform: rotate(-17deg);
+    left: 3rem;
+    top: 6.5rem;
+  }
+}
+@keyframes femaleTomale {
+  from {
+    transform: rotate(-17deg);
+    left: 4rem;
+    top: 6.2rem;
+  }
+  to {
+    transform: rotate(17deg);
+    left: -3rem;
+    top: 6.5rem;
+  }
+}
+
+.zeroToFemale {
+  animation-name: female;
+}
+.zeroToMale {
+  animation-name: male;
+}
+.maleToFemale {
+  animation-name: maleTofemale;
+}
+.femaleToMale {
+  animation-name: femaleTomale;
+}
+form {
+  margin: auto;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+input {
+  outline: unset;
+  border: unset;
+  border-radius: 5%;
+  font-size: 2rem;
+  padding: 0.2rem 1rem;
+  width: 85%;
+  margin: auto;
+}
+
+@media (min-width: 700px) {
+  form {
+    margin-top: 8rem;
+  }
+}
+
+button {
+  outline: unset;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  border: unset;
+}
